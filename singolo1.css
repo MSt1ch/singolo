@@ -132,8 +132,9 @@ table {
 .container-body {
   width: 1020px;
   margin: 0 auto;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', 'Open-Sans', sans-serif;
   color: #666d89;
+  text-align: justify;
 }
 
 .red-color {
@@ -155,7 +156,7 @@ table {
 .header-row {
   height: 95px;
   padding: 0 40px;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.3px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #2d303a;
@@ -170,13 +171,13 @@ table {
 }
 
 .header-row-singolo-text {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .header-row-navigation {
   margin-left: auto;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .header-row-navigation-list {
@@ -186,7 +187,7 @@ table {
 .header-row-navigation-list li.with-dot a::after {
   content: "·";
   font-weight: normal;
-  margin: auto 15px;
+  margin: auto 14px;
   color: #494e62;
 }
 
@@ -223,15 +224,14 @@ table {
 }
 
 footer.white-footer {
-  padding: 62px 40px 34px;
+  padding: 63px 40px 34px;
   background-color: #f2f2f2;
   border-bottom: 5px solid #ffffff;
-  text-align: justify;
 }
 
 footer.white-footer .white-footer-div-text-h2 {
   font-size: 30px;
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
@@ -239,7 +239,7 @@ footer.white-footer .white-footer-div-text-p {
   font-size: 18px;
   font-weight: 300;
   line-height: 31px;
-  margin-bottom: 44px;
+  margin-bottom: 44.5px;
   text-align: justify;
 }
 
@@ -251,7 +251,7 @@ footer.white-footer .white-footer-div-table-row {
 }
 
 footer.white-footer .white-footer-div-table-row-cell-picture {
-  margin-top: 2px;
+  margin-top: 1px;
 }
 
 footer.white-footer .white-footer-div-table-row-cell-text {
@@ -264,7 +264,6 @@ footer.white-footer .white-footer-div-table-row-cell-text h3 {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 10px;
-  text-align: justify;
 }
 
 footer.white-footer .white-footer-div-table-row-cell-text h3.add-letter-spacing {
@@ -275,6 +274,5 @@ footer.white-footer .white-footer-div-table-row-cell-text p {
   font-size: 12px;
   line-height: 22px;
   font-weight: 500;
-  text-align: justify;
 }
 /*# sourceMappingURL=singolo1.css.map */
