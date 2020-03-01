@@ -1,0 +1,145 @@
+.container-body {
+  width: 1020px;
+  margin: 0 auto;
+  font-family: 'Lato', 'Open-Sans', sans-serif;
+  color: #666d89;
+  text-align: justify;
+}
+
+.red-color {
+  color: #f06c64;
+}
+
+.interactive:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: mediumpurple;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.add-letter-spacing {
+  letter-spacing: 0.1px;
+}
+
+.add-letter-spacing-2 {
+  letter-spacing: 0.2px;
+}
+
+section.portfolio {
+  padding: 63px 40px 48px;
+  color: #666d89;
+  background-color: #2d303a;
+  border-bottom: 5px solid #323746;
+}
+
+section.portfolio h2 {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 28px;
+}
+
+section.portfolio p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+section.portfolio .portfolio-div {
+  margin-bottom: 19px;
+}
+
+section.portfolio .portfolio-div .portfolio-div-button {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 4px 6px 4px 9px;
+  margin-right: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  color: inherit;
+  background-color: inherit;
+}
+
+section.portfolio .portfolio-div :nth-child(2n) {
+  padding: 4px 6px 4px 7px;
+}
+
+section.portfolio .portfolio-div :nth-child(3) {
+  padding: 4px 6px 4px 6px;
+}
+
+section.portfolio .portfolio-table {
+  height: 621px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow-y: hidden;
+}
+
+section.portfolio .portfolio-table img {
+  margin-bottom: 20px;
+}
+
+section.about-us-section {
+  padding: 64px 40px 65px;
+  background-color: #f2f2f2;
+  border-bottom: 5px solid #ffffff;
+}
+
+section.about-us-section .about-us-section-text-h2 {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+section.about-us-section .about-us-section-text-p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 31px;
+  margin-bottom: 44.5px;
+  text-align: justify;
+}
+
+section.about-us-section .about-us-section-row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.about-us-section .about-us-section-row-card {
+  width: 300px;
+}
+
+section.about-us-section .about-us-section-row-card .picture {
+  margin-bottom: 16px;
+}
+
+section.about-us-section .about-us-section-row-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+section.about-us-section .about-us-section-row-card p {
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: justify;
+  margin-bottom: 22px;
+}
+
+section.about-us-section .about-us-section-row-card div {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 154px;
+}
+/*# sourceMappingURL=singolo2.css.map */
