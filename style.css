@@ -135,10 +135,13 @@ section.services-section {
 }
 
 section.services-section .services-section-div-table-row {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 30px;
+  overflow: hidden;
+  height: 93.333px;
+}
+
+section.services-section .services-section-div-table-row .services-section-div-table-row-cell + .services-section-div-table-row-cell {
+  margin-left: 20px;
 }
 
 section.services-section .services-section-div-table-row-cell-picture {
@@ -148,17 +151,19 @@ section.services-section .services-section-div-table-row-cell-picture {
 section.services-section .services-section-div-table-row-cell-text {
   width: 219px;
   margin-left: 20px;
-  margin-right: 1px;
 }
 
 section.services-section .services-section-div-table-row-cell-text h3 {
   font-size: 18px;
   font-weight: 700;
   font-size: 18px;
-  margin-bottom: 10px;
+  line-height: 22px;
+  margin-bottom: 8px;
 }
 
 section.services-section .services-section-div-table-row-cell-text p {
+  overflow: hidden;
+  height: 64px;
   font-size: 12px;
   line-height: 22px;
   font-weight: 500;
@@ -238,15 +243,16 @@ section.about-us-section .about-us-section-row-card h3 {
   font-weight: 700;
   margin-bottom: 10px;
   white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
 
 section.about-us-section .about-us-section-row-card p {
   font-size: 12px;
-  line-height: 21px;
+  line-height: 22px;
   font-weight: 400;
   text-align: justify;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 section.about-us-section .about-us-section-row-card div {
@@ -341,7 +347,7 @@ section.quoter form .form-col-second p {
   font-size: 12px;
   line-height: 22px;
   font-weight: 400;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 }
 
 section.quoter form .form-col-second ul {

@@ -126,13 +126,21 @@ h2{
 
 section.services-section {
     padding: 68px 40px 30px;
+
+
     background-color: #f2f2f2;
     border-bottom: 6px solid #ffffff;
     .services-section-div {
         &-table {
             &-row {
-                justify-content: space-between;
+               
                 margin-bottom: 30px;
+                overflow: hidden;
+                height: 93.333px;
+
+                .services-section-div-table-row-cell + .services-section-div-table-row-cell {
+                    margin-left: 20px;
+                  }
 
                 &-cell {
                     &-picture {
@@ -140,18 +148,19 @@ section.services-section {
                     }
 
                     &-text {
-                        width: 219px;
+                        width: 219px;        
                         margin-left: 20px;
-                        margin-right: 1px;
-
-
-                        h3 {
+                    
+                        h3 {      
                             font-size: 18px;
                             font-weight: 700;
                             font-size: 18px;
-                            margin-bottom: 10px;
+                            line-height: 22px;
+                            margin-bottom: 8px;
                         }
                         p {
+                            overflow: hidden;
+                            height: 64px;
                             font-size: 12px;
                             line-height: 22px;
                             font-weight: 500;
@@ -231,15 +240,16 @@ section.about-us-section {
                 font-weight: 700;
                 margin-bottom: 10px;
                 white-space: nowrap;
+                text-overflow: ellipsis;
                 overflow: hidden;
             }
 
             p {
                 font-size: 12px;
-                line-height: 21px;
+                line-height: 22px;
                 font-weight: 400;
                 text-align: justify;
-                margin-bottom: 24px;
+                margin-bottom: 22px;
             }
 
             div {
@@ -303,7 +313,7 @@ section.quoter {
                 font-size: 12px;
                 line-height: 22px;
                 font-weight: 400;
-                margin-bottom: 22px;
+                margin-bottom: 21px;
             }
 
             ul {
