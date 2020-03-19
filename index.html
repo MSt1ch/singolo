@@ -20,27 +20,50 @@
       </div>
       <nav class="header-row-navigation">
         <ul class="header-row-navigation-list flex">
-          <li class="red-color with-dot interactive"><a>HOME</a></li>
-          <li class="with-dot interactive"><a>SERVICES</a></li>
-          <li class="with-dot interactive"><a>PORTFOLIO</a></li>
-          <li class="with-dot interactive"><a>ABOUT</a></li>
-          <li class="interactive"><a>CONTACT</a></li>
+          <li class="with-dot interactive"><a href="#home" class="header-row-navigation-list-item active-color">HOME</a></li>
+          <li class="with-dot interactive"><a href="#services" class="header-row-navigation-list-item">SERVICES</a></li>
+          <li class="with-dot interactive"><a href="#portfolio-section" class="header-row-navigation-list-item">PORTFOLIO</a>
+          </li>
+          <li class="with-dot interactive"><a href="#about" class="header-row-navigation-list-item">ABOUT</a></li>
+          <li class="interactive"><a href="#contact" class="header-row-navigation-list-item">CONTACT</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <div class="slider">
-        <div class="slider-row flex">
-          <img src="assets/chev.png" width="16" height="27" class="interactive" alt="arrow left">
-          <img src="assets/yellow_mobile.png" width="240" height="483" class="slider-row-yellow-mobile"
-            alt="yellow mobile">
-          <img src="assets/blue_mobile.png" width="484" height="240" class="slider-row-blue-mobile" alt="blue mobile">
-          <img src="assets/chev.png" width="16" height="27" class="slider-arrow-right interactive" alt="arrow right">
+      <section id="home" class="home-section">
+        <div class="slider" id="slider">
+          <div class="wrapper">
+            <div class="slides" id="slides">
+              <div class="slide showing-slide">
+                <div class="slider-row flex">
+                  <img src="assets/yellow_mobile.png" width="240" height="483" class="slider-row-yellow-mobile"
+                    alt="yellow mobile">
+                  <img src="assets/blue_mobile.png" width="484" height="240" class="slider-row-blue-mobile"
+                    alt="blue mobile">
+                  <div class="slider-screen-black hidden vertical"></div>
+                  <div id="btn-vertical" class="slider-btn interactive vertical"></div>
+                  <div class="slider-screen-black hidden horizontal"></div>
+                  <div id="btn-horizontal" class="slider-btn interactive horizontal"></div>
+                </div>
+              </div>
+              <div class="slide">
+                <div>
+                  <img src="assets/Frame 3.png" width="1020" height="594" alt="second slide">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="controls flex">
+            <img src="assets/chev.png" width="16" height="27" id="slider-left-control" class="interactive"
+              alt="arrow left">
+            <img src="assets/chev.png" width="16" height="27" id="slider-right-control"
+              class="slider-arrow-right interactive" alt="arrow right">
+          </div>
         </div>
-      </div>
+      </section>
 
-      <section class="services-section">
+      <section id="services" class="services-section">
         <div class="services-section-div">
           <div class="services-section-div-text">
             <h2 class="services-section-div-text-h2">Our Services</h2>
@@ -110,7 +133,7 @@
                 <div class="services-section-div-table-row-cell-text">
                   <h3 class="add-letter-spacing">Feel Like A Star</h3>
                   <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
-                    Fusce vitae aliquam tellus.</p>                    
+                    Fusce vitae aliquam tellus.</p>
                 </div>
               </div>
             </div>
@@ -118,17 +141,17 @@
         </div>
       </section>
 
-      <section class="portfolio">
+      <section id="portfolio-section" class="portfolio">
         <h2>Portfolio</h2>
         <p class="p-big">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
           elit.</p>
-        <div class="portfolio-div flex">
-          <a class="portfolio-div-button interactive">All</a>
+        <div id="portfolio-tabs" class="portfolio-div flex">
+          <a class="portfolio-div-button active-tab interactive">All</a>
           <a class="portfolio-div-button interactive">Web Design</a>
           <a class="portfolio-div-button interactive">Graphic Design</a>
           <a class="portfolio-div-button interactive">Artwork</a>
         </div>
-        <div class="portfolio-table flex">
+        <div id="portfolio" class="portfolio-table flex">
           <img src="assets/1.png" class="interactive" width="220" height="187" alt="image">
           <img src="assets/2.png" class="interactive" width="220" height="187" alt="image">
           <img src="assets/3.png" class="interactive" width="220" height="187" alt="image">
@@ -144,11 +167,11 @@
           <img src="assets/11.png" class="interactive" width="220" height="187" alt="image">
           <img src="assets/12.png" class="interactive" width="220" height="187" alt="image">
           <img src="assets/12.png" class="interactive" width="220" height="187" alt="image">
-          
+
         </div>
       </section>
 
-      <section class="about-us-section">
+      <section id="about" class="about-us-section">
         <div class="about-us-section-text">
           <h2 class="about-us-section-text-h2">About Us</h2>
           <p class="about-us-section-text-p p-big">
@@ -200,19 +223,20 @@
         </div>
       </section>
 
-      <section class="quoter">
+      <section id="contact" class="quoter">
         <h2>Get a Quote</h2>
         <p class="p-big">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo
           luctus,
           nisi erat porttitor ligula, eget lacinia odio sem nec elit.
           Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-        <form class="flex">
+        <form id="form-contact" class="flex">
           <div class="form-col-first">
-            <input name="Name" type="text" class="w-100" pattern="[A-Za-zА-Яа-яЁё]" placeholder="Name (Required)"
-              required>
-            <input name="Email" type="email" class="w-100" placeholder="Email (Required)" required>
-            <input name="Subject" class="w-100" placeholder="Subject">
-            <textarea name="Details" class="w-100" placeholder="Describe your project in detail..."></textarea>
+            <input id="name" name="Name" type="text" class="w-100" pattern="[A-Za-zА-Яа-яЁё]{3,15}"
+              placeholder="Name (Required)" required>
+            <input id="email" name="Email" type="email" class="w-100" placeholder="Email (Required)" required>
+            <input id="subject" name="Subject" class="w-100" placeholder="Subject">
+            <textarea id="details" name="Details" class="w-100" maxlength="200"
+              placeholder="Describe your project in detail..."></textarea>
           </div>
           <div class="form-col-second">
             <h3>Contact Information</h3>
@@ -235,7 +259,7 @@
                     alt="mail"></span>
                 <a href="mailto:info@singolo.com" class="interactive">info@singolo.com</a></li>
             </ul>
-            <input type="submit" value="Send">
+            <input type="submit" id="contact-button" value="Send">
           </div>
         </form>
       </section>
@@ -251,6 +275,17 @@
       </div>
     </footer>
   </div>
+
+  <div id="contact-modal" class="modal">
+    <h3 class="modal-info">Информация</h3>
+    <hr>
+    <p id="modal-p">Письмо отправлено</p>
+    <div id="modal-contact-text" class="modal-text">
+    </div>
+    <button id="contact-button-close">OK</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
