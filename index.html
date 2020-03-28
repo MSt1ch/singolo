@@ -15,14 +15,20 @@
 <body>
   <div class="container-body">
     <header class="header-row flex">
-      <div class="header-row-singolo">
-        <h1><span class="header-row-singolo-text">SINGOLO</span><span class="red-color">*</span></h1>
-      </div>
-      <nav class="header-row-navigation">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>    
+        <div class="header-row-singolo">
+            <h1><span class="header-row-singolo-text">SINGOLO</span><span class="red-color">*</span></h1>
+        </div>
+      <nav class="header-row-navigation menu__box">
         <ul class="header-row-navigation-list flex">
-          <li class="with-dot interactive"><a href="#home" class="header-row-navigation-list-item active-color">HOME</a></li>
+          <li class="with-dot interactive"><a href="#home" class="header-row-navigation-list-item active-color">HOME</a>
+          </li>
           <li class="with-dot interactive"><a href="#services" class="header-row-navigation-list-item">SERVICES</a></li>
-          <li class="with-dot interactive"><a href="#portfolio-section" class="header-row-navigation-list-item">PORTFOLIO</a>
+          <li class="with-dot interactive"><a href="#portfolio-section"
+              class="header-row-navigation-list-item">PORTFOLIO</a>
           </li>
           <li class="with-dot interactive"><a href="#about" class="header-row-navigation-list-item">ABOUT</a></li>
           <li class="interactive"><a href="#contact" class="header-row-navigation-list-item">CONTACT</a></li>
@@ -37,10 +43,10 @@
             <div class="slides" id="slides">
               <div class="slide showing-slide">
                 <div class="slider-row flex">
-                  <img src="assets/yellow_mobile.png" width="240" height="483" class="slider-row-yellow-mobile"
-                    alt="yellow mobile">
-                  <img src="assets/blue_mobile.png" width="484" height="240" class="slider-row-blue-mobile"
-                    alt="blue mobile">
+                  <img src="assets/yellow_mobile.png" width="240" height="483"
+                    class="slider-row-img slider-row-yellow-mobile" alt="yellow mobile">
+                  <img src="assets/blue_mobile.png" width="484" height="240"
+                    class="slider-row-img slider-row-blue-mobile" alt="blue mobile">
                   <div class="slider-screen-black hidden vertical"></div>
                   <div id="btn-vertical" class="slider-btn interactive vertical"></div>
                   <div class="slider-screen-black hidden horizontal"></div>
@@ -72,9 +78,9 @@
               Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
               Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           </div>
-          <div class="services-section-div-table">
-            <div class="services-section-div-table-row flex">
-              <div class="services-section-div-table-row-cell flex">
+          <div class="services-section-div-table flex">
+            <div class="services-section-div-table-row-cell">
+              <div class="services-section-div-table-row-cell-content flex">
                 <div class="services-section-div-table-row-cell-picture">
                   <img src="assets/pen.svg" width="61" height="61" class="circle-img" alt="pen">
                 </div>
@@ -84,7 +90,9 @@
                     viverra lacus ut, <span class="add-letter-spacing-2">ultrices velit.</span></p>
                 </div>
               </div>
-              <div class="services-section-div-table-row-cell flex">
+            </div>
+            <div class="services-section-div-table-row-cell">
+              <div class="services-section-div-table-row-cell-content flex">
                 <div class="services-section-div-table-row-cell-picture">
                   <img src="assets/bulb.svg" width="61" height="61" class="circle-img" alt="bullb">
                 </div>
@@ -94,7 +102,9 @@
                     nec rutrum <span class="add-letter-spacing-2">tellus dolor id lorem.</span></p>
                 </div>
               </div>
-              <div class="services-section-div-table-row-cell flex">
+            </div>
+            <div class="services-section-div-table-row-cell">
+              <div class="services-section-div-table-row-cell-content flex">
                 <div class="services-section-div-table-row-cell-picture">
                   <img src="assets/heart.svg" width="61" height="61" class="circle-img" alt="heart">
                 </div>
@@ -105,8 +115,8 @@
                 </div>
               </div>
             </div>
-            <div class="services-section-div-table-row flex">
-              <div class="services-section-div-table-row-cell flex">
+            <div class="services-section-div-table-row-cell">
+              <div class="services-section-div-table-row-cell-content flex">
                 <div class="services-section-div-table-row-cell-picture">
                   <img src="assets/phone.svg" width="61" height="61" class="circle-img" alt="phone">
                 </div>
@@ -116,7 +126,9 @@
                     Prae&shy;sent elit leo.</p>
                 </div>
               </div>
-              <div class="services-section-div-table-row-cell flex">
+            </div>
+            <div class="services-section-div-table-row-cell">
+              <div class="services-section-div-table-row-cell-content flex">
                 <div class="services-section-div-table-row-cell-picture">
                   <img src="assets/bubble.svg" width="61" height="61" class="circle-img" alt="bubble">
                 </div>
@@ -126,7 +138,9 @@
                     egestas venenatis lorem.</p>
                 </div>
               </div>
-              <div class="services-section-div-table-row-cell flex">
+            </div>
+            <div class="services-section-div-table-row-cell">
+              <div class="services-section-div-table-row-cell-content flex">
                 <div class="services-section-div-table-row-cell-picture">
                   <img src="assets/star.svg" width="61" height="61" class="circle-img" alt="star">
                 </div>
@@ -152,22 +166,43 @@
           <a class="portfolio-div-button interactive">Artwork</a>
         </div>
         <div id="portfolio" class="portfolio-table flex">
+          <div class="portfolio-table-cell">
           <img src="assets/1.png" class="interactive" width="220" height="187" alt="image">
+          </div>
+          <div class="portfolio-table-cell">
           <img src="assets/2.png" class="interactive" width="220" height="187" alt="image">
+        </div>
+        <div class="portfolio-table-cell">
           <img src="assets/3.png" class="interactive" width="220" height="187" alt="image">
+        </div>
+        <div class="portfolio-table-cell">
           <img src="assets/4.png" class="interactive" width="220" height="187" alt="image">
-
+        </div>
+        <div class="portfolio-table-cell">
           <img src="assets/5.png" class="interactive" width="220" height="187" alt="image">
+        </div>
+        <div class="portfolio-table-cell">
           <img src="assets/6.png" class="interactive" width="220" height="187" alt="image">
+        </div>
+        <div class="portfolio-table-cell">
           <img src="assets/7.png" class="interactive" width="220" height="187" alt="image">
+        </div>
+        <div class="portfolio-table-cell">
           <img src="assets/8.png" class="interactive" width="220" height="187" alt="image">
+        </div>
+        <div class="portfolio-table-cell">
 
           <img src="assets/9.png" class="interactive" width="220" height="187" alt="image">
+        </div>
+        <div class="portfolio-table-cell">
           <img src="assets/10.png" class="interactive" width="220" height="187" alt="image">
+        </div>
+        <div class="portfolio-table-cell">
           <img src="assets/11.png" class="interactive" width="220" height="187" alt="image">
+        </div>
+        <div class="portfolio-table-cell">
           <img src="assets/12.png" class="interactive" width="220" height="187" alt="image">
-          <img src="assets/12.png" class="interactive" width="220" height="187" alt="image">
-
+        </div>
         </div>
       </section>
 
@@ -237,6 +272,7 @@
             <input id="subject" name="Subject" class="w-100" placeholder="Subject">
             <textarea id="details" name="Details" class="w-100" maxlength="200"
               placeholder="Describe your project in detail..."></textarea>
+            <input type="submit" id="contact-button" class="form-contact-button" value="Send">
           </div>
           <div class="form-col-second">
             <h3>Contact Information</h3>
@@ -259,14 +295,13 @@
                     alt="mail"></span>
                 <a href="mailto:info@singolo.com" class="interactive">info@singolo.com</a></li>
             </ul>
-            <input type="submit" id="contact-button" value="Send">
           </div>
         </form>
       </section>
     </main>
 
     <footer class="flex w-100">
-      <span>© Copyright 2013 · by PSDchat.com</span>
+      <span class="copyright">© Copyright 2013 · by PSDchat.com</span>
       <div class="flex footer-social-block">
         <img src="assets/Facebook.svg" class="interactive" width="34" height="35" alt="Facebook">
         <img src="assets/Google.svg" class="interactive" width="34" height="35" alt="Google">

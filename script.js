@@ -39,11 +39,27 @@ let slider = document.querySelector("#slider"),
   prev = document.querySelector("#slider-left-control"),
   next = document.querySelector("#slider-right-control");
 
+function correctWidth(needSlideSize)
+{
+  let slidesToCorrectWidth =  document.querySelectorAll(".slide");
+  for (let i=0;i<slidesToCorrectWidth.length;i++) {
+    slidesToCorrectWidth[i].style.width = needSlideSize + 'px';
+    console.log(slidesToCorrectWidth[i].style.width);
+  } 
+  console.log("-----------------------");
+  console.log(slidesToCorrectWidth);
+  console.log("-----------------------");
+}
+
 function slide(wrapper, items, prev, next) {
+  console.log("slide");
   let posInitial,
     slides = items.querySelectorAll(".slide"),
     slidesLength = slides.length,
-    slideSize = slides[0].offsetWidth,
+    //slideSize = slides[0].offsetWidth,
+    slideSize = slider.offsetWidth,
+
+    needSlideSize = slider.offsetWidth,
     firstSlide = slides[0],
     lastSlide = slides[slidesLength - 1],
     cloneFirst = firstSlide.cloneNode(true),
@@ -51,8 +67,15 @@ function slide(wrapper, items, prev, next) {
     index = 0,
     allowShift = true;
 
+
+
+ 
+
   items.appendChild(cloneFirst);
   items.insertBefore(cloneLast, firstSlide);
+
+  correctWidth(needSlideSize);
+
   wrapper.classList.add("loaded");
 
   prev.addEventListener("click", function() {
@@ -73,6 +96,8 @@ function slide(wrapper, items, prev, next) {
         posInitial = items.offsetLeft;
       }
 
+
+
       if (dir == 1) {
         items.style.left = posInitial - slideSize + "px";
         index++;
@@ -80,6 +105,11 @@ function slide(wrapper, items, prev, next) {
         items.style.left = posInitial + slideSize + "px";
         index--;
       }
+      console.log(dir);
+      console.log(items.style.left);
+      console.log("posInitial"+posInitial);
+      console.log("slideSize"+slideSize);   
+
     }
 
     allowShift = false;
