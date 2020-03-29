@@ -127,8 +127,6 @@ img {
 
 .slider {
   margin-top: 95px;
-  height: 600px;
-
   .wrapper {
     overflow: hidden;
     position: relative;
@@ -639,11 +637,11 @@ footer {
       visibility: hidden;
       position: fixed;
       padding-left: 71px;
-      padding-top: 184px;
+      padding-top: 190px;
       flex-direction: column;
       left: 0;
       z-index: 1;
-      width: 278px;
+      width: 208px;
       background: #2d303a;
       box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
       height: 100%;
@@ -664,7 +662,7 @@ footer {
       &-list {
         flex-direction: column;
         li {
-          margin-bottom: 27px;
+          margin-bottom: 28px;
         }
 
         &-item {

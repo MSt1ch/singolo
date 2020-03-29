@@ -44,19 +44,23 @@ function correctWidth(needSlideSize)
   let slidesToCorrectWidth =  document.querySelectorAll(".slide");
   for (let i=0;i<slidesToCorrectWidth.length;i++) {
     slidesToCorrectWidth[i].style.width = needSlideSize + 'px';
-    console.log(slidesToCorrectWidth[i].style.width);
   } 
-  console.log("-----------------------");
-  console.log(slidesToCorrectWidth);
-  console.log("-----------------------");
 }
 
+
+window.addEventListener("resize", () => {
+ 
+  correctWidth(slider.offsetWidth);
+  slideSize = slider.offsetWidth;
+  posInitial = sliderItems.offsetLeft;
+  sliderItems.style.left = 0 - slideSize + "px";
+
+});
+
 function slide(wrapper, items, prev, next) {
-  console.log("slide");
   let posInitial,
     slides = items.querySelectorAll(".slide"),
     slidesLength = slides.length,
-    //slideSize = slides[0].offsetWidth,
     slideSize = slider.offsetWidth,
 
     needSlideSize = slider.offsetWidth,
@@ -66,10 +70,6 @@ function slide(wrapper, items, prev, next) {
     cloneLast = lastSlide.cloneNode(true),
     index = 0,
     allowShift = true;
-
-
-
- 
 
   items.appendChild(cloneFirst);
   items.insertBefore(cloneLast, firstSlide);
@@ -89,6 +89,7 @@ function slide(wrapper, items, prev, next) {
   items.addEventListener("transitionend", checkIndex);
 
   function shiftSlide(dir, action) {
+    slideSize = slider.offsetWidth;
     items.classList.add("shifting");
 
     if (allowShift) {
@@ -105,10 +106,7 @@ function slide(wrapper, items, prev, next) {
         items.style.left = posInitial + slideSize + "px";
         index--;
       }
-      console.log(dir);
-      console.log(items.style.left);
-      console.log("posInitial"+posInitial);
-      console.log("slideSize"+slideSize);   
+
 
     }
 
